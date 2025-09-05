@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>未来想像ブログ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>未来想像ブログ</h1>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar-left">
+      <h2>検索</h2>
+      <label>年:</label>
+      <select id="yearSelect"></select>
+      <label>月:</label>
+      <select id="monthSelect"></select>
+      <input type="text" id="keywordInput" placeholder="フリーワード検索" />
+      <input type="text" id="tagInput" placeholder="タグ検索" />
+      <button onclick="filterPosts()">検索</button>
+    </aside>
+
+    <main class="content">
+      <div id="postsContainer">
+        <!-- 記事がここに表示されます -->
+      </div>
+    </main>
+
+    <aside class="sidebar-right">
+      <h2>広告・リンク</h2>
+      <p>ここに広告やおすすめリンクを配置できます。</p>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
