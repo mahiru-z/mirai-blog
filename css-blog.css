@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  height: calc(100vh - 80px); /* ヘッダー分を除く */
+}
+
+.sidebar-left,
+.sidebar-right {
+  width: 20%;
+  padding: 1rem;
+  background: #f0f0f0;
+  overflow-y: auto;
+}
+
+.content {
+  width: 60%;
+  padding: 1rem;
+  overflow-y: scroll;
+  background: #fff;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+#postsContainer > article {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
